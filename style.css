@@ -1,0 +1,183 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC';
+}
+image{
+    max-width:100%;
+    height:auto;
+}
+
+.container{
+    background-color:black;
+    
+}
+
+.header{
+    max-width: 1296px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1px solid #fff;
+    margin-left:300px;
+    margin-right:300px;  
+}
+
+.logo img{
+    width:189px;
+    padding-bottom: 28px;
+    padding-top:20px;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+.banner{
+    width:50%;
+    margin-top:40px;
+    margin-left: 310px;
+}
+.banner p{
+    color:#fff;
+    font-weight: 900;
+    font-size:90px;
+    line-height:1.2;
+}
+.btn {
+    font-size: 20px;
+    line-height: 1.2;
+    padding:20px 40px;
+    font-weight: 900;
+    background-color:black;
+    color: #fff;
+    border:1px solid #fff;
+    margin-top:40px;
+    border-radius: 10px;
+}
+
+.service{
+    max-width: 1296px;
+    margin-left:300px;
+    margin-right:300px;
+ 
+}
+.service-text{
+    display:flex;
+    
+}
+
+.service-text h3,h2{
+    color:#fff;
+font-weight: 900;
+line-height: 120%;
+
+}
+.service-text h3{
+    font-size:38px;
+    margin-bottom: 80px;
+}
+.service-text span{
+ display:inline-block;
+}
+.service-text h2{
+    font-size:32px;
+    width:414px;
+    margin-right:24px;
+    
+}
+
+.service-list {
+   display:flex;
+   color:#fff;
+  
+ 
+}
+.service-list li{
+    width: 416px;
+    height:366px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 24px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.service-list h2{
+    font-weight: 900;
+    font-size: 32px;
+    line-height:1.2;
+    margin-bottom: 20px;
+    margin-top: 26.67px;
+}
+.service-list p{
+    max-width:336px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 80px;
+   
+}
+.service-list img{
+    width:66.67px;
+    margin-top:83.33px;
+    
+}
+
+.partner{
+    max-width: 1296px;
+    margin-left:300px;
+    margin-right:300px;
+    margin-top: 160px;
+    outline: 1px white solid;
+    background-image: url("/images/enterprise.png"),url("/images/enterprise9.png");
+    background-position: left bottom,right bottom;
+    background-repeat: no-repeat;
+    background-size: 190px 40px;
+}
+
+.partner ul{
+    max-width:1296px;
+}
+
+
+.partner h2{
+    font-weight: 900;
+font-size: 32px;
+line-height: 120%;
+}
+
+.partner img{
+    width:160px;
+    height:40px;
+   
+}
+
+.firstRow,.secondRow{
+    display:flex;
+    justify-content: center;
+}
+.firstRow{
+    margin-top:80px;
+    margin-right:118px;
+    margin-left:118px;
+}
+.secondRow{
+    margin-top:20px;
+   
+}
+
+
+
