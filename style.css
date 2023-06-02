@@ -200,10 +200,11 @@ color:#fff;
 
 .tools-list li{
    width:416px;
+   border-radius:16px;
    margin-right:24px;
    margin-top: 24px;
-   outline:1px solid black;
-   overflow:hidden;
+   border:1px solid#F2F2F2;
+   
 }
 .image{
     overflow:hidden;
@@ -215,23 +216,24 @@ color:#fff;
     transform: scale(1.2);
    
 }
-//https://stackoverflow.com/questions/43219852/image-overflowhidden-with-scale-transition
-.tools h2{
+/*https://stackoverflow.com/questions/43219852/image-overflowhidden-with-scale-transition*/
+.tools>h2{
     text-align:center;
     font-weight: 900;
     font-size: 80px;
     line-height: 120%;
-    margin-top: 160px;
-    margin-bottom: 80px;
+    padding-top: 160px;
+    padding-bottom: 80px;
     color:black;
+}
+.tools{
+    padding-bottom: 250px;
 }
 
 .tools-search>ul{
     color:black;
   }
-.tools-list li>h2{
-    color: #000;
-}
+
 .tools-search ul{
     display:flex;
     justify-content: center;
@@ -270,6 +272,7 @@ margin-top: 158px;
     display:flex;
     flex-direction:column;
     align-items: center;
+    margin-bottom:180px;
 }
 
 //https://nikitahl.com/search-icon-inside-input
@@ -309,6 +312,95 @@ margin-top: 158px;
     cursor: pointer;
     opacity: 0.7;
   }*/
+.tools-ai span{
+    display:inline-block;
+}
+.tools-ai{
+    display:flex;
+    height:64px;
+    justify-content: space-between;
+    padding:20px 32px;
+    border:1px solid#F2F2F2;
+}
 
- 
+.tools-ai>span{
+font-weight: 900;
+font-size: 16px;
+line-height: 150%;
+}
+.tools-tag{
+    display: flex;
+    height:64px;
+    justify-content: space-between;
+    padding:20px 32px;
+    border:1px solid#F2F2F2;
+}
+.introduction{
+    padding:20px 32px;
+    height:118px;
+}
+.introduction>h2{
+    margin-bottom:12px;
+    font-weight: 900;
+font-size: 20px;
+line-height: 120%;
+}
+
+.btn2{
+    content: '';
+    background: url('/images/icons/call\ made.png') no-repeat;
+    background-position: center right 16px;
+}
+.siteMap{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin-left:300px;
+    margin-right:300px; 
+    border-top:1px solid #fff;
+}
+ .siteMap-list>ul{
+    color:#fff;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 120%;
+ }
+ .siteMap-logo>img{
+    width:188.99px;
+    height:40px;
+  }
+
+ .footer{
+    color:white;
+    display:flex;
+    margin-left:300px;
+    margin-right:300px;  
+    padding: 32px 0;
+    position:relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+ }
+.social>ul{
+    display: flex;
+}
+.social li{
+    margin-right:20px;
+   
+}
+.copyright{
+    margin-right:100px;
+}
+ .to-top>a{
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    right:0;
+    bottom:32px;
+    top:32px;
+  }
+
+  .to-top img{
+    padding-left: 20px;
+  }
   
