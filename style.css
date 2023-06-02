@@ -37,13 +37,14 @@ image{
     display: flex;
 }
 
-a{
+.menu a{
     text-decoration: none;
     color:#fff;
     font-size: 16px;
     line-height: 1.5;
     padding-right: 20px;
 }
+
 
 .banner{
     width:50%;
@@ -56,7 +57,7 @@ a{
     font-size:90px;
     line-height:1.2;
 }
-.btn {
+input[type="button"] {
     font-size: 20px;
     line-height: 1.2;
     padding:20px 40px;
@@ -79,33 +80,32 @@ a{
     
 }
 
-.service-text h3,h2{
+.service-text+h3{
     color:#fff;
 font-weight: 900;
 line-height: 120%;
+font-size:38px;
+margin-bottom: 80px;
 
 }
-.service-text h3{
-    font-size:38px;
-    margin-bottom: 80px;
-}
+
 .service-text span{
  display:inline-block;
 }
-.service-text h2{
+.service-text+h2{
     font-size:32px;
     width:414px;
     margin-right:24px;
-    
+    color:#fff;
+    font-weight: 900;
+    line-height: 120%;   
 }
 
 .service-list {
    display:flex;
    color:#fff;
-  
- 
 }
-.service-list li{
+.service-list>li{
     width: 416px;
     height:366px;
     padding-right: 40px;
@@ -115,7 +115,7 @@ line-height: 120%;
     border-radius: 16px;
 }
 
-.service-list h2{
+.service-list li>h2{
     font-weight: 900;
     font-size: 32px;
     line-height:1.2;
@@ -141,7 +141,7 @@ line-height: 120%;
     margin-left:300px;
     margin-right:300px;
     margin-top: 160px;
-    outline: 1px white solid;
+    
     background-image: url("/images/enterprise.png"),url("/images/enterprise9.png");
     background-position: left bottom,right bottom;
     background-repeat: no-repeat;
@@ -149,14 +149,18 @@ line-height: 120%;
 }
 
 .partner ul{
+    margin-top:80px;
     max-width:1296px;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 
-.partner h2{
+.partner+h2{
     font-weight: 900;
 font-size: 32px;
 line-height: 120%;
+color:#fff;
 }
 
 .partner img{
@@ -179,5 +183,132 @@ line-height: 120%;
    
 }
 
+.bg-white{
+    background-color: #fff;
+    max-width:1920px;
+    border-radius:160px;
+   
+}
 
+.tools-list>ul{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
 
+.tools-list li{
+   width:416px;
+   margin-right:24px;
+   margin-top: 24px;
+   outline:1px solid black;
+   overflow:hidden;
+}
+.image{
+    overflow:hidden;
+}
+.image img{
+    transition: transform 0.5s linear;
+}
+.image:hover img{
+    transform: scale(1.2);
+   
+}
+//https://stackoverflow.com/questions/43219852/image-overflowhidden-with-scale-transition
+.tools h2{
+    text-align:center;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 120%;
+    margin-top: 160px;
+    margin-bottom: 80px;
+    color:black;
+}
+
+.tools-search>ul{
+    color:black;
+  }
+.tools-list li>h2{
+    color: #000;
+}
+.tools-search ul{
+    display:flex;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 60px;
+}
+.tools-search li{
+    margin-right:24px;
+    
+}
+.tools-search a{
+    text-decoration: none;
+    color: #919191;
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.gray{
+    color: #020202;
+    width: 32px;
+    height: 24px;
+    background: #F2F2F2;
+border-radius: 16px;
+padding:8px 16px 8px 16px;
+
+}
+
+.callToAction>h2{
+    font-weight: 900;
+font-size: 48px;
+line-height: 120%;
+color:white;
+margin-top: 158px;
+}
+.callToAction{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+//https://nikitahl.com/search-icon-inside-input
+/*form {
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+
+  input[type="search"] {
+    border: none;
+    width:1296px;
+    background:#fff;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid black;
+    border-radius: inherit;
+  }
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: url("/images/icons/search.png") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }*/
+
+ 
+  
