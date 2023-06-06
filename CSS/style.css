@@ -15,7 +15,7 @@ image{
 }
 
 .header{
-    max-width: 1296px;
+    
     display:flex;
     justify-content: space-between;
     border-bottom:1px solid #fff;
@@ -47,9 +47,10 @@ image{
 
 
 .banner{
-    width:50%;
+    
     margin-top:40px;
     margin-left: 310px;
+    
 }
 .banner p{
     color:#fff;
@@ -68,6 +69,14 @@ input[type="button"] {
     margin-top:40px;
     border-radius: 10px;
 }
+.banner-animation{
+  display:flex;
+  justify-content: flex-end;
+  margin-left:300px;
+    margin-right:300px;  
+  margin-bottom: 160px;
+  margin-top:200px;
+}
 
 .service{
     max-width: 1296px;
@@ -76,30 +85,29 @@ input[type="button"] {
  
 }
 .service-text{
-    display:flex;
+    display: flex;
     
+    margin-bottom: 80px;
 }
 
-.service-text+h3{
+.service-text>.right{
     color:#fff;
 font-weight: 900;
 line-height: 120%;
-font-size:38px;
-margin-bottom: 80px;
+font-size:35px;
+width:75%;
 
 }
 
-.service-text span{
- display:inline-block;
-}
-.service-text+h2{
+.service-text>h2{
     font-size:32px;
-    width:414px;
-    margin-right:24px;
+    width:20%;
+    margin-right: 24px;
     color:#fff;
     font-weight: 900;
     line-height: 120%;   
 }
+
 
 .service-list {
    display:flex;
@@ -156,7 +164,7 @@ margin-bottom: 80px;
 }
 
 
-.partner+h2{
+.partner>h2{
     font-weight: 900;
 font-size: 32px;
 line-height: 120%;
@@ -206,6 +214,7 @@ color:#fff;
    border:1px solid#F2F2F2;
    
 }
+
 .image{
     overflow:hidden;
 }
@@ -230,15 +239,18 @@ color:#fff;
     padding-bottom: 250px;
 }
 
-.tools-search>ul{
-    color:black;
-  }
+.tools-search{
+  display:flex;
+}
 
 .tools-search ul{
     display:flex;
     justify-content: center;
+    color:black;
+    margin-left:250px;
     margin-top: 44px;
     margin-bottom: 60px;
+    margin-right: 280px;
 }
 .tools-search li{
     margin-right:24px;
@@ -260,6 +272,83 @@ border-radius: 16px;
 padding:8px 16px 8px 16px;
 
 }
+ .dropdown a {
+  text-decoration: none;
+  display:block;
+  color:inherit;
+  
+}
+
+.fs-normal {
+  font-size: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #F2F2F2;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  border-radius: 16px;
+}
+
+.dropdown-btn:hover {
+  border-color: #000000;
+}
+
+.dropdown-menu {
+  position:absolute;
+  right:0;
+  display:none;
+  margin-top: 4px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  border-radius: 16px;
+}
+
+.dropdown-menu a {
+  padding: 4px 40px;
+  
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
 
 .callToAction>h2{
     font-weight: 900;
@@ -275,7 +364,7 @@ margin-top: 158px;
     margin-bottom:180px;
 }
 
-//https://nikitahl.com/search-icon-inside-input
+/*https://nikitahl.com/search-icon-inside-input*/
 /*form {
     color: #555;
     display: flex;
@@ -354,10 +443,11 @@ line-height: 120%;
 .siteMap{
     display:flex;
     justify-content: space-between;
-    padding-top: 80px;
+    padding: 80px 0;
     margin-left:300px;
     margin-right:300px; 
     border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
 }
  .siteMap-list>ul{
     color:#fff;
@@ -403,4 +493,44 @@ line-height: 120%;
   .to-top img{
     padding-left: 20px;
   }
-  
+  .recommend ul{
+    max-width:1296px;
+    color:white;
+    display:flex;
+    margin-left:300px;
+    margin-right:300px; 
+    justify-content: center;
+    margin-top: 160px;
+  }
+
+  .recommend li{
+
+
+    background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+  }
+  .recommend li>p{
+   display:flex;
+   margin: 22px 40px 109px;
+   font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  }
+  .recommend-icon{
+    margin-bottom:22px;
+    margin-left:41px;
+  }
+  .recommend-name{   
+    margin-left:40px;
+    display:flex;
+    margin-bottom: 160px;
+  }
+
+  .recommend-name img{
+    margin-right: 16px;
+  }
+
+  .name >h3{
+    margin-bottom: 4px;
+  }
+
